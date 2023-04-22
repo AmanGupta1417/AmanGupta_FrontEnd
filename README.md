@@ -1,0 +1,8 @@
+# AmanGupta_FrontEnd
+The code I have submitted is a React component that renders an unordered list of items with a selection highlight feature. The list is composed of multiple SingleListItem components, each displaying a text and changing its background color to green when selected, and red when not selected. The List component receives an items prop, which is an array of objects containing the text property for each item. The List component also manages the selection state of the list items, updating the selectedIndex state when an item is clicked, and resetting it when the items prop changes.
+
+The SingleListItem component is a simple functional component that receives four props: index, isSelected, onClickHandler, and text. The index prop is the index of the current item in the items array, the isSelected prop is a boolean value that indicates whether the current item is selected or not, the onClickHandler prop is a function that is called when the current item is clicked, and the text prop is the text to be displayed in the item.
+
+The List component is composed of the SingleListItem components using the map function on the items array. The handleClick function is called when a SingleListItem is clicked, updating the selectedIndex state to the index of the clicked item. The useEffect hook is used to reset the selectedIndex state to null when the items prop changes, ensuring that no item is selected by default.
+
+Overall, the code I have submitted is a simple and reusable React component that can be used to display a list of items with a selection highlight feature, which can be useful in various web applications. 
