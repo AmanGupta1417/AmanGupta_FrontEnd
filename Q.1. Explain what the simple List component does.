@@ -1,0 +1,5 @@
+The simple List component is a React component that renders an unordered list (<ul>) of items. Each item is a SingleListItem component that displays a text and highlights the item when it is selected.
+The List component receives an items prop, which is an array of objects containing the text property for each item. The SingleListItem components are rendered using the map function on the items array.
+When a SingleListItem is clicked, the handleClick function is called with the index of the clicked item, and the setSelectedIndex function is called with the index value to update the selectedIndex state. The isSelected prop of the SingleListItem is then set to true if the index of the current item matches the selectedIndex state, and false otherwise.
+The useEffect hook in the List component is used to reset the selectedIndex state to null when the items prop changes, so that the list is not displayed with any selected item by default.
+Overall, the List component is a simple and reusable React component that can be used to display a list of items with a selection highlight feature.
